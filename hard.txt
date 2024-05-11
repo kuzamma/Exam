@@ -1,0 +1,163 @@
+INSERT INTO questions (level, subtopic, question, options, correct)
+VALUES
+('hard', 'CONTEXT-FREE LANGUAGES AND PUSHDOWN AUTOMATA', ' a→b
+Restriction: Length of b must be at least as much length of a.
+Which of the following is correct for the given assertion?', '{"Greibach Normal form", "Context Sensitive Language", ") Chomsky Normal form", "Recursively Ennumerable language"}', 'Context Sensitive Language'),
+
+('hard', 'CONTEXT-FREE LANGUAGES AND PUSHDOWN AUTOMATA', ' If P is the production, for the given statement, state true or false.
+P: V->(V∑T)* represents that the left hand side production rule has no right or left context.', '{"true", " false"}', 'true'),
+
+('hard', 'CONTEXT-FREE LANGUAGES AND PUSHDOWN AUTOMATA', ' There exists a Context free grammar such that:
+X->aX 
+Which among the following is correct with respect to the given assertion?', '{" Left Recursive Grammar", " Right Recursive Grammar", "Non Recursive Grammar", "None of the mentioned"}', ' Right Recursive Grammar'),
+
+('hard', 'CONTEXT-FREE LANGUAGES AND PUSHDOWN AUTOMATA', '  Find a regular expression for a grammar which generates a language which states:
+L contains a set of strings starting wth an a and ending with a b, with something in the middle', '{"a(a*Ub*)b", " a*(aUb)b*", "a(a*b*)b", "None of the mentioned"}', 'a(a*Ub*)b'),
+
+('hard', 'CONTEXT-FREE LANGUAGES AND PUSHDOWN AUTOMATA', '  Which of the following is the correct representation of grammar for the given regular expression?', '{" (1) S → aMb
+    (2) M → e
+    (3) M → aM
+    (4) M → bM", " (1) S → aMb
+    (2) M → Mab
+    (3) M → aM
+    (4) M → Bm", " (1) S → aMb
+    (2) M → e
+    (3) M → aMb
+    (4) M → bMa", "None of the mentioned"}', ' (1) S → aMb
+    (2) M → e
+    (3) M → aM
+    (4) M → bM'),
+
+('hard', 'CONTEXT-FREE LANGUAGES AND PUSHDOWN AUTOMATA', '  A CFG for a program describing strings of letters with the word “main” somewhere in the string:', '{"  ->  m a i n 
+     ->   | epsilon
+     -> A | B | ... | Z | a | b ... | z", "  -->  m a i n 
+     -->   
+     --> A | B | ... | Z | a | b ... | z", " -->  m a i n 
+      -->  | epsilon
+      --> A | B | ... | Z | a | b ... | z", "None of the mentioned"}', '  ->  m a i n 
+     ->   | epsilon
+     -> A | B | ... | Z | a | b ... | z'),
+
+('hard', 'CONTEXT-FREE LANGUAGES AND PUSHDOWN AUTOMATA', '  For the given set of code, the grammar representing real numbers in Pascal has   error in one of the six lines. Fetch the error.
+(1) ->
+(2) -> | epsilon
+(3) -> | epsilon
+(4) -> ‘E’ | epsilon
+(5) -> + | – | epsilon
+(6) -> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9', '{"3", " 4", "2", "No errors"}', '3'),
+
+('hard', 'CONTEXT-FREE LANGUAGES AND PUSHDOWN AUTOMATA', ' Let G=(V, T, P, S)
+where a production can be written as:
+S->aAS|a
+A->SbA|ba|SS
+Which of the following string is produced by the grammar?', '{"aabbaab", "aabbaa", "baabab", "None of the mentioned"}', 'aabbaa'),
+
+('hard', 'CONTEXT-FREE LANGUAGES AND PUSHDOWN AUTOMATA', '  Statement 1: Ambiguity is the property of grammar but not the language.
+Statement 2: Same language can have more than one grammar.
+Which of the following options are correct with respect to the given statements?', '{"Statement 1 is true but statement 2 is false", "Statement 1 is false but statement 2 is true", "Both the statements are true", " Both the statements are false"}', 'Both the statements are true'),
+
+('hard', 'CONTEXT-FREE LANGUAGES AND PUSHDOWN AUTOMATA', '  Let L be a CFL. Then there is an integer n so that for any u that belong to language L satisfying
+|t|>=n, there are strings u, v, w, x, y and z satisfying
+t=uvwxy.
+Let p be the number of variables in CNF form of the context free grammar. The value of n in terms of p is', '{" 2p", "2p", "2p+1", "p2"}', '2p+1'),
+
+('hard', 'CONTEXT-FREE LANGUAGES AND PUSHDOWN AUTOMATA', '  Which of the following cannot be filled in the blank below?
+Statement: There are CFLs L1 nad L2 so that ___________is not a CFL', '{"  L1∩L2", "L1′", "L1*", "None of the mentioned"}', 'L1*'),
+
+('hard', 'CONTEXT-FREE LANGUAGES AND PUSHDOWN AUTOMATA', ' Let ∑={0,1}* and the grammar G be:
+S->ε
+S->SS
+S->0S1|1S0
+State which of the following is true for the given', '{"Language of all and only Balanced strings", "  It contains equal number of 0’s and 1’s", " Ambiguous Grammar", "All of the mentioned"}', 'All of the mentioned'),
+
+
+
+('hard', 'REGULAR EXPRESSIONS AND LANGUAGES',  'The minimum length of a string {0,1}* not in the language corresponding to the given regular expression:
+(0*+1*)(0*+1*)(0*+1*)', '{"3", "4",  "5", "6"}', '4'),
+
+('hard', 'REGULAR EXPRESSIONS AND LANGUAGES',  'Which of the following regular expression is equivalent to R(1,0)?
+R(1,0)={111*}*', '{"(11+111)*", "(111+1111)*",  "(111+11*)*", "All of the mentioned"}', '(11+111)*'),
+
+('hard', 'REGULAR EXPRESSIONS AND LANGUAGES',  'The minimum number of 1’s to be used in a regular expression of the given language:
+R(x): The language of all strings containing exactly 2 zeroes', '{"2", "3",  "0", "1"}', '3'),
+
+('hard', 'REGULAR EXPRESSIONS AND LANGUAGES',  'The given regular language corresponds to which of the given regular language
+e+1+(1+0)*0+(0+1)*11', '{"The language of all strings that end with 11 or 00", "The language of all strings that end with 0 or 1",  "The language of all strings which does not end with 01", "None of the mentioned"}', 'The language of all strings which does not end with 01'),
+
+('hard', 'REGULAR EXPRESSIONS AND LANGUAGES',  'A->aAa|bAb|a|b|e
+Which among the following is the correct option for the given production?', '{"Left most derivation", " Right most derivation",  " Recursive Inference", " None of the mentioned"}', ' Left most derivation'),
+
+('hard', 'REGULAR EXPRESSIONS AND LANGUAGES',  'What does the following segment of code output?
+$string1 = "Hello World\n";
+if ($string1 =~ m/(H..).(l..)/) {
+  print "We matched $1 and $2.\n";
+}', '{" We matched ‘Hel’ and ‘ld’", "We matched ‘Hel’ and ‘lld’",  " We matched ‘Hel’ and ‘lo ‘", " None of the mentioned"}', 'We matched ‘Hel’ and ‘lo ‘'),
+
+('hard', 'REGULAR EXPRESSIONS AND LANGUAGES',  'Given segment of code:
+$string1 = "Hello\nWorld\n";
+if ($string1 =~ m/d\n\z/) {
+  print "$string1 is a string ";
+  print "that ends with d\\n.\n";
+}
+What does the symbol /z does?', '{"changes line", "matches the beginning of a string",  " matches the end of a string", " none of the mentioned"}', 'matches the end of a string'),
+
+('hard', 'REGULAR EXPRESSIONS AND LANGUAGES',  'Generate a regular expression for the following problem statement:
+Password Validation: String should be 8-15 characters long. String must contain a number, an Uppercase letter and a Lower case letter', '{"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$", "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{9,16}$",  "^(?=.[a-z])(?=.[A-Z])(?=.\d).{8,15}$", "None of the mentioned"}', '^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$'),
+
+('hard', 'REGULAR EXPRESSIONS AND LANGUAGES',  'Generate a regular expression for the following problem statement:
+P(x): String of length 6 or less for å={0,1}*', '{"(1+0+e)6", "(10)6",  "(1+0)(1+0)(1+0)(1+0)(1+0)(1+0)", "More than one of the mentioned is correct"}', '(1+0+e)6'),
+
+('hard', 'REGULAR EXPRESSIONS AND LANGUAGES',  'Generate a regular expression for the given language:l
+L(x): {xÎ{0,1}*| x ends with 1 nd does not contain a substring 01}', '{"(0+01)*", "(0+01)*1",  " (0+01)*(1+01)", "All of the mentioned"}', ' (0+01)*(1+01)'),
+
+
+
+('hard', 'FINITE AUTOMATA',  'The number of elements in the set for the Language L={xϵ(∑r) *|length if x is at most 2} and ∑={0,1} is _________', '{"7",  "6", "8", "5"}', '7'),
+
+('hard', 'FINITE AUTOMATA',  'For the following change of state in FA, which of the following codes is an incorrect option?', '{"δ (m, 1) = n",  "δ (0, n) = m", "δ (m,0) = ε", "s: accept = false; cin >> char;
+     if char = 0 goto n;"}', 'δ (0, n) = m'),
+
+('hard', 'FINITE AUTOMATA',  'Given: ∑= {a, b}
+L= {xϵ∑*|x is a string combination}
+∑4 represents which among the following?', '{"{aa, ab, ba, bb}",  "{aaaa, abab, ε, abaa, aabb}", "{aaa, aab, aba, bbb}", "All of the mentioned"}', '{aaaa, abab, ε, abaa, aabb}'),
+
+('hard', 'FINITE AUTOMATA',  'a ^ nb ^ n where (n+m) is even', '{"Type 0",  "Type 1", "Type 2", "Type 3"}', 'Type 3'),
+
+('hard', 'FINITE AUTOMATA',  'Given Language: {x | it is divisible by 3}
+The total number of final states to be assumed in order to pass the number constituting {0, 1} is', '{"0",  "1", "2", "3"}', '2'),
+
+('hard', 'FINITE AUTOMATA',  'Let L be a language whose FA consist of 5 acceptance states and 11 non final states. It further consists of a dumping state. Predict the number of acceptance states in Lc', '{"16",  "11", "5", "6"}', '16'),
+
+('hard', 'FINITE AUTOMATA', ' Predict the analogous operation for the given language:
+A: {[p, q] | p ϵ A1, q does not belong to A2}', '{"A1-A2", "A2-A1", "A1.A2", " A1+A2"}', 'A1-A2'),
+
+('hard', 'FINITE AUTOMATA',  'Let N (Q, ∑, δ, q0, A) be the NFA recognizing a language L. Then for a DFA (Q’, ∑, δ’, q0’, A’), which among the following is true?', '{"Q’ = P(Q)",  " Δ’ = δ’ (R, a) = {q ϵ Q | q ϵ δ (r, a), for some r ϵ R}", "Q’ = {q0}", "All of the mentioned"}', 'All of the mentioned'),
+
+('hard', 'FINITE AUTOMATA',  'There exists an initial state, 17 transition states, 7 final states and one dumping state, Predict the maximum number of states in its equivalent DFA?', '{"226",  " 224", "225", "223"}', '226'),
+
+('hard', 'FINITE AUTOMATA',  'What is the output for the given language?
+Language: A set of strings over ∑= {a, b} is taken as input and it prints 1 as an output “for every occurrence of a, b as its substring. (INPUT: abaaab)', '{"0010001",  "  0101010", "0111010", "0010000"}', '0010001'),
+
+
+
+('hard', 'TURING MACHINES',  'The number of states required to automate the last question i.e. {a,b}*{aba}{a,b}* using finite automata:', '{"4",  "3", "5", "6"}', '4'),
+
+('hard', 'TURING MACHINES',  'The machine accept the string by entering into hA or it can:', '{"explicitly reject x by entering into hR",  "enter into an infinte loop", "explicitly reject x by entering into hR and enter into an infinte loop", "None of the mentioned"}', 'explicitly reject x by entering into hR and enter into an infinte loop'),
+
+('hard', 'TURING MACHINES',  'In a n-track turing machine, _________ head/heads read and write on all tracks simultaneously.', '{"one",  "two", "n", "infinite"}', 'one'),
+
+('hard', 'TURING MACHINES',  'Every language accepted by a k-tape TM is _____ by a single-tape TM', '{"accepted",  "not accepted", "generated", "not generated"}', 'accepted'),
+
+('hard', 'TURING MACHINES',  'Which of the following is/are a basic TM equivalent to?', '{"Multitrack TM",  "Multitape TM", "Non-deterministic TM", "All of the mentionedd"}', 'All of the mentioned'),
+
+('hard', 'TURING MACHINES',  'X is a simple mathematical model of a computer. X has unrestricted and unlimited memory. X is a FA with R/W head. X can have an infinite tape divided into cells, each cell holding one symbol.
+Name X?', '{"Push Down Automata",  " Non deterministic Finite Automata", "Turing machines", "ANone of the mentioned"}', 'Turing machines'),
+
+('hard', 'TURING MACHINES',  ' Which of the following is/are not an application of turing machine?', '{"Language Recognization",  " Computers of functions on non negative numbers", "Generating devices", "None of the mentioned"}', 'None of the mentioned'),
+
+('hard', 'TURING MACHINES',  'Which of the following cannot be a possibility of a TM while it processes an input?', '{"Enters accepting state",  "Enters non-accepting state", "Enters infinite loop and never halts", "None of the mentioned"}', 'None of the mentioned'),
+
+('hard', 'TURING MACHINES',  'Pick the odd one out.', '{"Subroutines",  "Multiple tracks", "Shifting over", "Recursion"}', 'Recursion'),
+
+('hard', 'TURING MACHINES',  'Which among the following is not true for 2-way infinte TM?', '{"tape in both directions",  "Leftmost square not distinguished", " Any computation that can be performed by 2-way infinite tape can also be performed by standard TM", "None of the mentioned"}', 'None of the mentioned'),
+
